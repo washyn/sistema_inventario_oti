@@ -1,1 +1,1 @@
-# sistema_inventario_oti
+# Sistema de inventario OTI
