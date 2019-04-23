@@ -39,3 +39,31 @@ O se puede utilizar el IDE Visual Studio
 
 
 ITIL…se tomara en cuenta la parte de ….
+
+### Requerimientos
+* Registro de equipos de red(inventariado)
+* Registro de incidencias de los equipos de red
+* Reporte… del estado de los equipos ,,,,(mostrar datos estadísticos de los sucesos con los equipos)
+
+### Casos de Uso( diagrama)
+* Funcionales. -Cosas que se pueden hacer con el sistema
+* No funcionales. -Características y/o restricciones en la implementación o estándares de calidad
+
+
+### Otros Diagramas
+#### Diagrama de secuencia, clases, despliegue, ER…
+#### Cronograma de actividades (diagrama de gant)
+#### Mockup del sitio web …
+#### Costos… se omite
+
+
+
+
+
+Análisis
+Diseño
+Planificacion
+Implementaion
+Despliege
+Mantenimiento
+
