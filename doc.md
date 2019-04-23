@@ -30,7 +30,11 @@ Programación extrema XP y Scrum, según el texto “Scrum y xp desde las
 De XP se tomara la programación en pares, para el backend y frontend, 2 para cada uno.
 
 Trincheras” estas dos metodologías se pueden usar en conjunto tomando algunas premisas de cada una, ambos son metodologías agiles e iterativas.
+
 Para la parte del diseño de … la interfaz se utilizaran las métricas de Material Design( son guias de diseño que ayudaran a que el web site se vea bien), utilizando los colores del logo del la OTI azul y celeste
+
+![Paleta de colores](img/palette.png)
+
 Para mejorar la parte del desarrollo por el lado del BackEnd se utilizara Python con flask y por el lado del FrontEnd Vue.js con vuetify, vue router, 
 Herramientas 
 Webstorn IDE para desarrollo web con vue
