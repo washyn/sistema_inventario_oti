@@ -1,8 +1,9 @@
 # Sistema de información de inventario y registro de incidentes
+
 ### Planteamiento del problema
+
 El proceso de inventario de equipos de cómputo se realizaba, llenando de manera manual unos formatos impresos que posteriormente es recopilada en un archivo físico y digital (Excel) de todos los equipos con las que cuenta la Universidad, no se puede garantizar que dicho archivo Excel brinde los datos suficientes y necesarios para conocer el estado de estos equipos.
 No hay registro adecuado de los componentes de un gabinete como el responsable la ubicación, número de serie etc., se necesita registrar eventos que sucedan con estos, como un …
-------------------------------------------------------------------------------------------------------------------
 
 
 ### Objetivos
