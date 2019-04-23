@@ -47,6 +47,7 @@ ITIL…se tomara en cuenta la parte de ….
 
 ### Casos de Uso( diagrama)
 * Funcionales. -Cosas que se pueden hacer con el sistema
+    * Registrar ...
 * No funcionales. -Características y/o restricciones en la implementación o estándares de calidad
 
 
