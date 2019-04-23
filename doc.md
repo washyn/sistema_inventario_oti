@@ -63,11 +63,11 @@ ITIL…se tomara en cuenta la parte de ….
 
 
 
-
-Análisis
-Diseño
-Planificacion
-Implementaion
-Despliege
-Mantenimiento
+### Etapas
+* Análisis
+* Diseño
+* Planificacion
+* Implementaion
+* Despliege
+* Mantenimiento
 
