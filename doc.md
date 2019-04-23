@@ -45,6 +45,8 @@ ITIL…se tomara en cuenta la parte de ….
 * Registro de incidencias de los equipos de red
 * Reporte… del estado de los equipos ,,,,(mostrar datos estadísticos de los sucesos con los equipos)
 
+![Ficha de requerimientos](img/ficha_de_requeriminetos.PNG)
+
 ### Casos de Uso( diagrama)
 
 * Funcionales. -Cosas que se pueden hacer con el sistema
