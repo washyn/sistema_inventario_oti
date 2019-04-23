@@ -51,7 +51,7 @@ ITIL…se tomara en cuenta la parte de ….
     * Registrar ...
 * No funcionales. -Características y/o restricciones en la implementación o estándares de calidad
 
-![Detalle de caso de uso](descripcion_caso_de_uso.png)
+![Detalle de caso de uso](img/descripcion_caso_de_uso.png)
 
 
 ### Otros Diagramas
