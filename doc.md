@@ -46,9 +46,12 @@ ITIL…se tomara en cuenta la parte de ….
 * Reporte… del estado de los equipos ,,,,(mostrar datos estadísticos de los sucesos con los equipos)
 
 ### Casos de Uso( diagrama)
+
 * Funcionales. -Cosas que se pueden hacer con el sistema
     * Registrar ...
 * No funcionales. -Características y/o restricciones en la implementación o estándares de calidad
+
+![Detalle de caso de uso](descripcion_caso_de_uso.png)
 
 
 ### Otros Diagramas
