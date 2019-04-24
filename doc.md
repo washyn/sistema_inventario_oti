@@ -77,3 +77,13 @@ ITIL…se tomara en cuenta la parte de ….
 * Despliege
 * Mantenimiento
 
+
+Login
+https://vuetifyjs.com/en/examples/layouts/centered
+
+Site
+https://vuetifyjs.com/en/examples/layouts/googleContacts
+
+
+Example layouts
+https://vuetifyjs.com/en/framework/pre-made-layouts
