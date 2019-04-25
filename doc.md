@@ -87,3 +87,124 @@ https://vuetifyjs.com/en/examples/layouts/googleContacts
 
 Example layouts
 https://vuetifyjs.com/en/framework/pre-made-layouts
+
+
+
+### Referencias
+
+Packt Publishing
+Flask By Example
+
+
+O’Reilly Media
+Flask web development
+
+O’Reilly Media
+Python Cookbook
+
+HTTPS
+
+Flask doc
+VueJs doc
+Vuetify doc
+
+### TODO
+
+Realizar un diagrama de despliege ... o del funcionamiento del programa.
+
+
+Diagrama de Servicio rest
+
+
+diagrama de consumo de ApiRest con VueJs u otro framework Web
+
+
+
+# Doc
+
+
+Se utilizara el azul por ser los colores representativos de la OTI que estan en el logo. 
+
+Para el backend se creara una api rest, esto permitira a la aplicacion ser escalable, de forma que si posteriormente se quiere crear una aplicacion mobil o desktop solo tendra que consulta a la API REST, asi podra comunicarse con otros sistemas que necesiten los datos de este sistema.
+
+
+Con esos datos en formato json,(datos )  se puede leer esos datos y crear un vista HTML, crear una app android, un UI para IOS.
+
+
+REFERENCIA from
+programador web valencia
+
+### Diseño de la API Rest
+
+
+#### Tabla de rutas para realizar un API Rest
+
+
+Tabla de rutas para realizar un API Rest
+
+Ruta	Método	Funcionalidad
+
+/signup	                    POST	Registro
+/auth/login	                POST	Inicio de sesión
+/auth/logout	            GET	Cerrar sesión
+
+
+/equipos                            Lista los equitos.
+/equipos/equipo_001                 Obtiene detalles del equipo.
+/equipos/equipo_001/incidentes      Obtieene la lista de incidentes con el equipo.
+
+
+
+/biblioteca	                GET	Lista todas las bibliotecas
+/biblioteca	                POST	Crea una nueva biblioteca
+/biblioteca/45	            GET	Obtiene la biblioteca
+/biblioteca/45	            PUT	Actualiza la biblioteca
+/biblioteca/45	            DELETE	Borra la biblioteca
+/biblioteca/45/libros	    GET	Lista todos los libros de la biblioteca
+/biblioteca/45/libros/21	GET	Obtiene el libro de la biblioteca
+/biblioteca/45/libros/21	PUT	Actualiza el libro de la biblioteca
+/biblioteca/45/libros/21	DELETE	Borra el libro de la biblioteca
+
+
+### Bibliotecas para Flask
+Por supuesto, hay muchas y muy buenas. Las siguientes son las más detacables.
+
+flask-restful: Sencilla forma de realizar un API Rest.
+
+flask-restplus: Ampliación del anterior. Entre otras herramientas, tiene un generador de documentación.
+
+flask-restless: Preparado para trabajar con SQLalchemy.
+
+
+
+
+
+### Herramientas
+
+
+El backEnd
+Python con flask ide Pycharn
+
+
+
+El frontEnd
+Node JS con Vuejs ide WebStorn
+
+
+
+Con el sistema de control de versiones git, usando su plataforma web GitHub.
+
+
+
+
+
+
+
+En el backend se utilizara un ORM, 
+en python hay varios, weno ni tantos , 4-5 ORMs
+peewee, Pony ORM, SQLAlchemy, y SQLObject ademas esta el ORM de Django, pero este esta estrechamente ligado al framework Django, y tratar de desacoplarlo y hacer algunos hacks para integrarlo con flask puede tomar algo de tiempo. 
+
+para este caso se utilizara peewee,porque al parecer es un orm estable, tiene soporte para MYSQL( REFERENCIA AL VIDEO COMPARACION ENTRE ORM EN PYTHON)
+
+
+una campanita de notificaciones, la indicara la cantidad de equipos en estado malo.
