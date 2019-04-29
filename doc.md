@@ -76,7 +76,8 @@ Sistemas de información administrativa
 Sistemas de soporte de decisiones 
 Sistemas de soporte para ejecutivos
 
-
+# El sistema sera responsive ??? 
+dependiendo del caso de uso que se espera detalle la ing. 
 
 ## Requerimientos
 
@@ -96,6 +97,7 @@ Tomar requerimientos....
 * Funcionales. -Cosas que se pueden hacer con el sistema
     * Registrar ...
 * No funcionales. -Características y/o restricciones en la implementación o estándares de calidad
+  ITIL
 
 
 
@@ -104,7 +106,21 @@ Tomar requerimientos....
 Actores
 
 ---
+NOTAS:
 
+    Usuario(jefe o personal)
+
+    jefe se refiere a los 3 encargados de la OTI la ing Crist, ing Gabino y ...
+    personal se refiere a los trabajadores de la OTI, ademas de aquellos que esten haciendo practicas en dicha area.
+
+    Bien o equipo.
+    se sefiere a cosas como un switch, patch panel, gabiente...
+
+
+El acceso al sistema sera solo online, para todos los casos el usuario debera tener conexion a internet.
+En caso de que la conexion a internet se vea interrumpida, cualquier cambio que el usuario haga sobre los datos en la aplicacion web nos se guardaran, tendra solo la opcion de logout. 
+
+---
 #### Nombre del caso de uso: Login 
 
 * Actor(es): Jefe o personal
@@ -132,17 +148,139 @@ Actores
 
 * Post condicion:
 El usuario logeado, puede acceder a los datos del sistema de acuerdo a sus permisos si es jefe o personal.
+OK
 
 
+#### Nombre del caso de uso: Administrar usuarios
+
+* Actor(es): Jefe
+
+
+* Descripción: Inicialmente solo los jefes tendran acceso al sistema, estos podran crear cuentas con menos permisos(crear credenciales para el personal),  de para que el personal pueda acceder al sistema, ver la lista de usuarios del sistema(personal), eliminar cuentas (una vez que el personal deje de laborar en la OTI) y modificar los datos del uusuario, en caso de que estos sean erroneos o requieran un cambio de contraseña.
+
+El jede(s) de la OTI, puede (CRUD), crear cuentas, listar usuarios, modificar contraseña de acceso o actualizar datos y eliminar(deshabilitar) cuentas de usuario(personal).
+
+
+* Flujo principal:
+    1. El jefe entra al apartado de usuarios de la aplicacion web.
+    2. La aplicacion web mostrara la lista de usuarios.
+    3. *La lista contendra contendra unos botones al lado derecho(icono de editar(modifiar), borrar(eliminar cuenta de personal)).*
+    4. *Mostrara un floatin action botton que permitira agregar un usuario.*
+
+    5. El jefe clikea en el boton de modifiar usuario.
+    6. El sitio mostrara un cudro de dialogo donde podra modifiar los datos(ademas de un boton de guardar y descartar cambios),(Mensaje en la parte inferior de exito o error).
+
+    7. El jefe clikea en el boton de modifiar eliminar usuario.
+    8. El el website mostrara un mensaje de confirmacion de eliminar(Mensaje en la parte inferior de exito o error).
+
+    9. El jefe clikea en el boton de agregar eliminar usuario.
+    10. El website muestra un cuadro de dialogo donde debe introducir los datos del nuevo usuario(personal), debajo del cuadro de dialogo se dara la opcion de guardar y descartar(Mensaje en la parte inferior de exito o error).
+
+    11. Los cambios hechos se deberan ver reflejados en la base de datos y en la lista de usuarios(personal).
+
+
+
+* Flujo alternativo:
+    Flujo alternativo para en punto 5-10 en caso de que se interrumpa la conexion a internet, (los datos no se cachearan para guardarlos posteriormente cuando se retome la conexion) los datos no se guardaran en la base de datos. 
+
+* Precondicion: El usuario(jefe o personal) debe estar logeado.
+
+* Post condicion:
+El jefe puede administrar el personal que accede al sistema, pudiendo crear cuentas de usuario, eliminar y modifiar de manera que un nuevo personal pueda entrar al sistema o restringir su acceso.
+
+OK
 ---
 
 
-Caso de uso: 
-Admin de usuarios
+----------------------------------------------------------------------------------------------------
 
-    En el sistema los jefes podran, crear credenciales para el personal.
+Listar equipos, bienes, buscar.
 
 
+
+Tendra una opcion de buscar equipos, por nombre, marca...(ANALIZAR)
+
+---
+----------------------------------------------------------------------------------------------------
+#### Nombre del caso de uso: Registrar incidente
+* Actor(es): Jefe o personal
+* Descripción: Estos 2 actores tendran permiso de listar, ver los equipos.
+* Flujo principal:
+* Flujo alternativo:
+* Precondicion
+* Post condicion
+----------------------------------------------------------------------------------------------------
+
+#### Nombre del caso de uso: Listar(o administrar) equipos...HMMMMMMMMMMM
+
+
+* Actor(es): Jefe
+
+* Descripción: El jefe tedra la opcion de registrar , listar(ver) y modifiar equipos,en el inventario, ver los equipos por categorias, buscar un equipo en especifico por su nombre, marca u otro atributo.
+El usuario podra listar los bienes registrados en el sistema, verlos ordenados por lugar(facu), encargado(personas que son responsables del bien), bienes en diferentes estados(malogrados,buenos)
+
+* Flujo principal:
+    1. El jefe despues de logearse al sistema, se le mostrara una barra de navegacion en la parte derecha con el nombre de equipos.
+    2. El usuario clikea el boton equipos.
+    3. El sistema muestra los equipos en una lista.
+    4. Al usuario se le motrara el equipo y una fotografia al costado(si es que tiene o el sistema mostrara una imagen por default). 
+    5. El sistema motrara opciones en la parte superior para agrupar los equipos por categorias.
+    6. En la lista de equipos se mostrara un boton de editar equipo(para editar el estado o responsable, etc), al presionar en el boton se mostrara un cuadro de dialogo donde podra editar los datos y dos opciones en la parte inferior de guardar o descartar cambios.
+    7. Además el sistema motrara en la parte inferior un boton de donde podra registrar(agregar) un equipo, al presionar en en boton se mostrara un cudro de dialogo donde podra insertar datos del equipo y subir una imagen.
+...
+...
+...
+
+# BUSCAR...SISTEMA DE SEGUIEMIENTO DE ....
+se neceista hacer un seguimiento a los equipo.
+
+
+Al presionar sobre un equipo en la lista, se le mostrara mas detalles y sucesos correspondientes a dicho equipo en orden cronologico.
+ENTONCES YA NO SERIA SOLO ADMINISTRAR EQUIPO. SERIA LISTAR SUCESOS.
+...
+...
+...
+
+
+* Flujo alternativo:
+    Flujo alternativo para en punto 5-10 en caso de que se interrumpa la conexion a internet, (los datos no se cachearan para guardarlos posteriormente cuando se retome la conexion) los datos no se guardaran en la base de datos. 
+
+* Precondicion: El usuario(jefe) debe estar logeado.
+
+* Post condicion:
+El jefe puede administrar el personal que accede al sistema, pudiendo crear cuentas de usuario, eliminar y modifiar de manera que un nuevo personal pueda entrar al sistema o restringir su acceso.
+
+
+
+----------------------------------------------------------------------------------------------------
+#### Nombre del caso de uso: Listar equipos
+a diferencia del caso de uso de arriba el usuario solo podra ver los equipos.
+
+----------------------------------------------------------------------------------------------------
+
+Agregar equipos
+registrar equipos y agregar a cargo de quienes estan los equipos
+----------------------------------------------------------------------------------------------------
+Modificar equipos.
+modifiar estado de un equipo, bueno, malogrado, de baja... no encontrado(not found)
+----------------------------------------------------------------------------------------------------
+Agregar encargado
+Listar encargados
+Modifiar encargado
+
+---
+Hostorial de las manos por las cuales paso el equipo.
+----------------------------------------------------------------------------------------------------
+
+
+Agregar suceso, incidente (usuario o jefe).
+
+----------------------------------------------------------------------------------------------------
+Jefe, reposrte de equipos, esto para mostrar un reporte de los equipo, imppreso en una hoja para mostrarlo a sus superiores(Rector).
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 
 ### Referencias
 
