@@ -8,7 +8,14 @@ No hay registro adecuado de los componentes de un gabinete como el responsable, 
 
 
 ## Objetivos
-Se pretende desarrollar un sistema de Control de Inventario de bienes de los cuales es responsable la OTI (Gabinetes y componentes internos como switch...), centrada en solucionar y mitigar la mayor cantidad de amenazas como perdida, imperfecto en las que pueda estar incurriendo los componentes internos del gabinete en la Universidad Nacional del Altiplano en su control de inventario, permitiendo lograr un alto nivel de satisfacción, integridad de la información y mejorar considerablemente en el tiempo de generar los reportes de manera oportuna y precisa.
+Se pretende desarrollar un 
+
+sistema de Control de **Inventario de bienes** de los cuales es responsable la OTI 
+ademas de un **registro de incidentes**
+e **historial de sucesos** con los equipos.
+e **historial de ubicaciones** con los equipos.
+
+(Gabinetes y componentes internos como switch...), centrada en solucionar y mitigar la mayor cantidad de amenazas como perdida, imperfecto en las que pueda estar incurriendo los componentes internos del gabinete en la Universidad Nacional del Altiplano en su control de inventario, permitiendo lograr un alto nivel de satisfacción, integridad de la información y mejorar considerablemente en el tiempo de generar los reportes de manera oportuna y precisa.
 El sistema sera una aplicacion web.
 
 Además de llevar un seguimiento del funcionamiento de estos equipos. Registrar enventos como mantenimiento, reparacion, etc.
@@ -90,38 +97,25 @@ Tomar requerimientos....
 * Reporte… del estado de los equipos ,,,,(mostrar datos estadísticos de los sucesos con los equipos)
 
 
-### Casos de Uso( diagrama)
+## Casos de Uso( diagrama)
+---
+
+El acceso al sistema sera solo online, para todos los casos el usuario debera tener conexion a internet en todo momento.
+En caso de que la conexion a internet se vea interrumpida, cualquier cambio que el usuario haga sobre los datos en la aplicacion web nos se guardaran en la base de datos, tendra solo la opcion de logout si es que pierde la conexion a internet. 
 
 
+* Caso de uso funcionales.- Acciones que se pueden realizar con el sistema
+* Caso de uso no funcionales.- Características y/o restricciones en la implementación o estándares de calidad
+  ITIL...
 
-* Funcionales. -Cosas que se pueden hacer con el sistema
-    * Registrar ...
-* No funcionales. -Características y/o restricciones en la implementación o estándares de calidad
-  ITIL
+* Actores (personal de oti y jefes), jefe se refiere a los 3 encargados de la OTI la ing Crist, ing Gabino y personal a los que laboran en la OTI, practicantes y ...(2 contratados).
+* Bien o equipo,se sefiere a cosas como un switch, patch panel, gabiente...
 
 
-
-
-#### TODO
-Actores
 
 ---
-NOTAS:
-
-    Usuario(jefe o personal)
-
-    jefe se refiere a los 3 encargados de la OTI la ing Crist, ing Gabino y ...
-    personal se refiere a los trabajadores de la OTI, ademas de aquellos que esten haciendo practicas en dicha area.
-
-    Bien o equipo.
-    se sefiere a cosas como un switch, patch panel, gabiente...
-
-
-El acceso al sistema sera solo online, para todos los casos el usuario debera tener conexion a internet.
-En caso de que la conexion a internet se vea interrumpida, cualquier cambio que el usuario haga sobre los datos en la aplicacion web nos se guardaran, tendra solo la opcion de logout. 
-
+### Nombre del caso de uso: Login 
 ---
-#### Nombre del caso de uso: Login 
 
 * Actor(es): Jefe o personal
 
@@ -150,15 +144,34 @@ En caso de que la conexion a internet se vea interrumpida, cualquier cambio que 
 El usuario logeado, puede acceder a los datos del sistema de acuerdo a sus permisos si es jefe o personal.
 OK
 
+---
+### Nombre del caso de uso: Logout
+---
 
-#### Nombre del caso de uso: Administrar usuarios
+* Actor(es): Jefe o personal
 
+* Descripción: Despues de que el usuario haya hecho login con la aplicacion web, debera cerrar su cuenta para evitar que alguien mas tenga acceso a los datos.
+
+* Flujo principal:
+    1. El usuario entra al home de la aplicacion web.
+    2. Clickea el boton de Login en opcion LogOut.
+    3. aplicacion web muestra cierra cesion.
+    4. La aplicacion muestra en home de la pagina.
+    
+* Flujo alternativo: No aplica.
+
+* Precondicion: El usuario(jefe o personal) debe estar logeado.
+
+---
+### Nombre del caso de uso: Administrar usuarios
+---
 * Actor(es): Jefe
 
 
-* Descripción: Inicialmente solo los jefes tendran acceso al sistema, estos podran crear cuentas con menos permisos(crear credenciales para el personal),  de para que el personal pueda acceder al sistema, ver la lista de usuarios del sistema(personal), eliminar cuentas (una vez que el personal deje de laborar en la OTI) y modificar los datos del uusuario, en caso de que estos sean erroneos o requieran un cambio de contraseña.
+* Descripción: 
+El jefe(s) de la OTI, pueden crear cuentas, listar(ver) usuarios, modificar contraseña de acceso o actualizar datos y eliminar(deshabilitar) cuentas de usuario(personal).
 
-El jede(s) de la OTI, puede (CRUD), crear cuentas, listar usuarios, modificar contraseña de acceso o actualizar datos y eliminar(deshabilitar) cuentas de usuario(personal).
+Inicialmente solo los jefes tendran acceso al sistema, estos podran crear cuentas con menos permisos(crear credenciales para el personal para que el personal pueda acceder al sistema), ver la lista de usuarios del sistema(personal), desabilitar cuentas (una vez que el personal deje de laborar en la OTI) y modificar los datos del usuario, (en caso de que estos sean erroneos o requieran un cambio de contraseña).
 
 
 * Flujo principal:
@@ -188,11 +201,10 @@ El jede(s) de la OTI, puede (CRUD), crear cuentas, listar usuarios, modificar co
 * Post condicion:
 El jefe puede administrar el personal que accede al sistema, pudiendo crear cuentas de usuario, eliminar y modifiar de manera que un nuevo personal pueda entrar al sistema o restringir su acceso.
 
-OK
----
-
 
 ----------------------------------------------------------------------------------------------------
+
+
 
 Listar equipos, bienes, buscar.
 
@@ -202,7 +214,7 @@ Tendra una opcion de buscar equipos, por nombre, marca...(ANALIZAR)
 
 ---
 ----------------------------------------------------------------------------------------------------
-#### Nombre del caso de uso: Registrar incidente
+### Nombre del caso de uso: Registrar incidente
 * Actor(es): Jefe o personal
 * Descripción: Estos 2 actores tendran permiso de listar, ver los equipos.
 * Flujo principal:
@@ -211,7 +223,7 @@ Tendra una opcion de buscar equipos, por nombre, marca...(ANALIZAR)
 * Post condicion
 ----------------------------------------------------------------------------------------------------
 
-#### Nombre del caso de uso: Listar(o administrar) equipos...HMMMMMMMMMMM
+### Nombre del caso de uso: Listar(o administrar) equipos...HMMMMMMMMMMM
 
 
 * Actor(es): Jefe
@@ -482,3 +494,26 @@ Conocer la infraestructura donde se va a desplegar
 * Implementaion
 * Despliege
 * Mantenimiento
+
+
+
+Historial de datos del bien
+
+Reporte de historial de datos
+
+Inicialemnte se registrara un bine luego se hara un seguimiento de lo que suceda con el bien.
+
+Lo otro es incidentes los inciedente que sucedan con el bien.
+
+
+
+una tabla ddonde se almacenen el historial de las manos por las cuales paso el bien
+una tabla de las ubicacioes por donde estuvo el bien
+una tabla de los sucesos como(reparacion...)
+
+
+se necesita saber los lugares por donde paso un bien y los reponsables ???
+
+
+
+
