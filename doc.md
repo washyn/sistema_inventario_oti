@@ -12,8 +12,8 @@ Se pretende desarrollar un
 
 sistema de Control de **Inventario de bienes** de los cuales es responsable la OTI 
 ademas de un **registro de incidentes**
-e **historial de sucesos** con los equipos.
-e **historial de ubicaciones** con los equipos.
+**historial de sucesos(incidentes)** con los equipos.
+**historial de ubicaciones** con los equipos.
 
 (Gabinetes y componentes internos como switch...), centrada en solucionar y mitigar la mayor cantidad de amenazas como perdida, imperfecto en las que pueda estar incurriendo los componentes internos del gabinete en la Universidad Nacional del Altiplano en su control de inventario, permitiendo lograr un alto nivel de satisfacción, integridad de la información y mejorar considerablemente en el tiempo de generar los reportes de manera oportuna y precisa.
 El sistema sera una aplicacion web.
@@ -517,3 +517,4 @@ se necesita saber los lugares por donde paso un bien y los reponsables ???
 
 
 
+Asuminedo que tambien se registraran los bienes que esten en otro edificio universitario.
