@@ -14256,7 +14256,7 @@
 							}
 						}
 					],
-					"documentation": "La ubicacion no esta en el acta porque cada bien puede moverse su ubicacion...entonces que ubicacion se pondra en en acta.\nOK\n\nEsta clase representa los bienes que se registraran en la base de datos",
+					"documentation": "La ubicacion no esta en el acta porque cada bien puede moverse su ubicacion...entonces que ubicacion se pondra en en acta.\nOK\n\nEsta clase representa los bienes que se registraran en la base de datos\n\n\n---\n\nPara la interfaz de usuario los datos que se mostraran seran.\n\n* Denominacion\n* estado\n* tipo\n* ...\n",
 					"columns": [
 						{
 							"_type": "ERDColumn",
@@ -15232,6 +15232,7 @@
 								"$ref": "AAAAAAFqrLg7QV0kGEU="
 							},
 							"name": "nombres",
+							"documentation": "Nombres de la persona",
 							"length": 0
 						},
 						{
@@ -15241,6 +15242,7 @@
 								"$ref": "AAAAAAFqrLg7QV0kGEU="
 							},
 							"name": "apellido_paterno",
+							"documentation": "aoellido del padre",
 							"length": 0
 						},
 						{
@@ -15250,6 +15252,7 @@
 								"$ref": "AAAAAAFqrLg7QV0kGEU="
 							},
 							"name": "apellido_materno",
+							"documentation": "apellido de la madre",
 							"length": 0
 						},
 						{
@@ -15259,6 +15262,7 @@
 								"$ref": "AAAAAAFqrLg7QV0kGEU="
 							},
 							"name": "telefono",
+							"documentation": "Numero de celular o telefono",
 							"length": 0,
 							"nullable": true
 						},
@@ -15269,6 +15273,7 @@
 								"$ref": "AAAAAAFqrLg7QV0kGEU="
 							},
 							"name": "correo",
+							"documentation": "Correo electronico o email.",
 							"length": 0,
 							"nullable": true
 						},
