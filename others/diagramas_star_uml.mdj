@@ -371,7 +371,7 @@
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
 					"name": "Diagrama  de caso de uso",
-					"documentation": "El acceso al sistema sera restringido,(acceso solo con usuario y contraseña) \nsolo podra ser accesado a traves de personal de la OTI y (administradores)\"jefes\" \npara estos admins se creara una cuenta de usuario por default,el cual podran modificar despues,\nesta cuenta les permitira crear cuentas para el personal con menos privilegios.\n\n\nEn la Oti hay un archivo excel donde estan los puntos que tiene internet en la  UNA\nse debera hacer un caso de uso para registrar eso.\n\n\nSe deberas crear un mopudlo adicional de documentos o requerimientos que llegan a la OTI\n\n\n\nSe debe poder asignar documentos a las personas(a una o varias )y se podra ver tareas en progreso, terminado, etc.\n\n\n\n\nAdemas de los equipos que se requieieron para atender tal Documento o requerimiento o problema a atender. \n\n\n\n\n\n\n",
+					"documentation": "El acceso al sistema sera restringido,(acceso solo con usuario y contraseña) \nsolo podra ser accesado a traves de personal de la OTI y (administradores)\"jefes\" \npara estos admins se creara una cuenta de usuario por default,el cual podran modificar despues,\nesta cuenta les permitira crear cuentas para el personal con menos privilegios.\n\n\nEn la Oti hay un archivo excel donde estan los puntos que tiene internet en la  UNA\nse debera hacer un caso de uso para registrar eso.\n\n\n\nSe deberas crear un mopudlo adicional de documentos o requerimientos que llegan a la OTI\n\n\n\nSe debe poder asignar documentos a las personas(a una o varias )y se podra ver tareas en progreso, terminado, etc.\n\n\n\n\nAdemas de los equipos que se requieieron para atender tal Documento o requerimiento o problema a atender. \n\n\n\n\n\n\n",
 					"ownedViews": [
 						{
 							"_type": "UMLActorView",
@@ -8927,7 +8927,7 @@
 						"$ref": "AAAAAAFqUBGdoBa9kzQ="
 					},
 					"name": "ERDDiagram",
-					"documentation": "viendo lo complejo que puede ser se trato de simplificar a estas \ntablas\n\nasumiendo que los bienes estan en un gabinete\n\nse necesita una tabla gabinete adicional...\n\ntomar en cuenta que en la ubicacion puede ponerse tambien direccion ya que\ntambien se registrara equipos de Derecho, Edificio de educacion continua\n\nUna tabla para switch\nUna tabla para PDU\nUna tabla para switch\nUna tabla para switch\n\n\nla facu, lugar tiene(Entidad) \n    (list entities)\n    gabinete(entidad)\n        Switch(entidad)\n        ordenador de cable(entidad)\n    pdu(entidad)\n    otros(entidad)\n\nque es lo mas inportante en un gabinete ???",
+					"documentation": "viendo lo complejo que puede ser se trato de simplificar a estas \ntablas\n\nasumiendo que los bienes estan en un gabinete\n\nse necesita una tabla gabinete adicional...\n\ntomar en cuenta que en la ubicacion puede ponerse tambien direccion ya que\ntambien se registrara equipos de Derecho, Edificio de educacion continua\n\nUna tabla para switch\nUna tabla para PDU\nUna tabla para switch\nUna tabla para switch\n\n\nla facu, lugar tiene(Entidad) \n    (list entities)\n    gabinete(entidad)\n        Switch(entidad)\n        ordenador de cable(entidad)\n    pdu(entidad)\n    otros(entidad)\n\nque es lo mas inportante en un gabinete ???\n\n\n\n\nLas propiedades de navegacion solo seran Listas, que relacionan de uno a muchos, esto servira para acceder a sus elementos hijos",
 					"ownedViews": [
 						{
 							"_type": "ERDEntityView",
@@ -10968,6 +10968,21 @@
 										},
 										{
 											"_type": "ERDColumnView",
+											"_id": "AAAAAAFraFIDDywkdkI=",
+											"_parent": {
+												"$ref": "AAAAAAFqrMwIM1341zM="
+											},
+											"model": {
+												"$ref": "AAAAAAFraFICmiwhkfg="
+											},
+											"font": "Arial;13;0",
+											"left": 645,
+											"top": 1213,
+											"width": 246.08447265625,
+											"height": 13
+										},
+										{
+											"_type": "ERDColumnView",
 											"_id": "AAAAAAFq7BgwxDoM7eU=",
 											"_parent": {
 												"$ref": "AAAAAAFqrMwIM1341zM="
@@ -10977,7 +10992,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1213,
+											"top": 1228,
 											"width": 246.08447265625,
 											"height": 13
 										},
@@ -10992,7 +11007,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 645,
-											"top": 1228,
+											"top": 1243,
 											"width": 246.08447265625,
 											"height": 13
 										}
@@ -11001,14 +11016,14 @@
 									"left": 640,
 									"top": 1103,
 									"width": 256.08447265625,
-									"height": 143
+									"height": 158
 								}
 							],
 							"font": "Arial;13;0",
 							"left": 640,
 							"top": 1080,
 							"width": 256.08447265625,
-							"height": 166,
+							"height": 181,
 							"autoResize": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFqrMwIMl33PYo="
@@ -11260,7 +11275,7 @@
 										"$ref": "AAAAAAFqrUsYaHMLdDw="
 									},
 									"font": "Arial;13;0",
-									"left": 1251,
+									"left": 1257,
 									"top": 750,
 									"width": 28.18994140625,
 									"height": 13,
@@ -11279,7 +11294,7 @@
 										"$ref": "AAAAAAFqrUsYaHMLdDw="
 									},
 									"font": "Arial;13;0",
-									"left": 1323,
+									"left": 1329,
 									"top": 514,
 									"height": 13,
 									"alpha": 0.5235987755982988,
@@ -11314,7 +11329,7 @@
 								"$ref": "AAAAAAFqUDw3jxg3OwU="
 							},
 							"lineStyle": 2,
-							"points": "1308:495;1308:775;1058:775",
+							"points": "1314:495;1314:775;1058:775",
 							"nameLabel": {
 								"$ref": "AAAAAAFqrUsYaXMM8xU="
 							},
@@ -11589,7 +11604,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 184,
-									"top": 904,
+									"top": 915,
 									"width": 171.28515625,
 									"height": 13,
 									"alpha": 0.4993467641429783,
@@ -11609,7 +11624,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 321,
-									"top": 631,
+									"top": 636,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -11643,7 +11658,7 @@
 								"$ref": "AAAAAAFqnbzdJAJ+dHo="
 							},
 							"lineStyle": 2,
-							"points": "368:856;336:856;336:420;368:420",
+							"points": "368:867;336:867;336:420;368:420",
 							"nameLabel": {
 								"$ref": "AAAAAAFqrVXp2XPq2lU="
 							},
@@ -11754,7 +11769,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 843,
+									"left": 836,
 									"top": 1025,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -11771,7 +11786,7 @@
 										"$ref": "AAAAAAFq69fryTCBujY="
 									},
 									"font": "Arial;13;0",
-									"left": 862,
+									"left": 849,
 									"top": 958,
 									"width": 56.37353515625,
 									"height": 13,
@@ -11808,7 +11823,7 @@
 								"$ref": "AAAAAAFqUBZZ4BcNQj8="
 							},
 							"lineStyle": 2,
-							"points": "928:910;928:1016;760:1016;760:1080",
+							"points": "915:910;915:1016;760:1016;760:1080",
 							"nameLabel": {
 								"$ref": "AAAAAAFq69fryjCCEes="
 							},
@@ -11836,7 +11851,7 @@
 										"$ref": "AAAAAAFq69f7gzCVUnc="
 									},
 									"font": "Arial;13;0",
-									"left": 962,
+									"left": 955,
 									"top": 995,
 									"width": 56.37353515625,
 									"height": 13,
@@ -11855,7 +11870,7 @@
 										"$ref": "AAAAAAFq69f7gzCVUnc="
 									},
 									"font": "Arial;13;0",
-									"left": 943,
+									"left": 930,
 									"top": 929,
 									"height": 13,
 									"alpha": 0.5235987755982988,
@@ -11890,7 +11905,7 @@
 								"$ref": "AAAAAAFqUBZZ4BcNQj8="
 							},
 							"lineStyle": 2,
-							"points": "928:910;928:1016;1052:1016;1052:1080",
+							"points": "915:910;915:1016;1052:1016;1052:1080",
 							"nameLabel": {
 								"$ref": "AAAAAAFq69f7gzCWwsk="
 							},
@@ -13363,7 +13378,7 @@
 										"$ref": "AAAAAAFq7/X+n++MkZw="
 									},
 									"font": "Arial;13;0",
-									"left": 545,
+									"left": 475,
 									"top": 568,
 									"height": 13,
 									"alpha": 0.5235987755982988,
@@ -13398,7 +13413,7 @@
 								"$ref": "AAAAAAFqncXRqAL/CUA="
 							},
 							"lineStyle": 2,
-							"points": "560:600;560:568;1408:568;1408:920;1488:920",
+							"points": "490:600;490:568;1408:568;1408:920;1488:920",
 							"nameLabel": {
 								"$ref": "AAAAAAFq7/X+n++NZlk="
 							},
@@ -13539,7 +13554,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 821,
+									"left": 814,
 									"top": 579,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -13573,7 +13588,7 @@
 										"$ref": "AAAAAAFq9g+MjgMQGJw="
 									},
 									"font": "Arial;13;0",
-									"left": 943,
+									"left": 930,
 									"top": 608,
 									"height": 13,
 									"alpha": -0.5235987755982988,
@@ -13591,7 +13606,7 @@
 								"$ref": "AAAAAAFqrLg7QV0moy8="
 							},
 							"lineStyle": 2,
-							"points": "714:495;714:600;928:600;928:640",
+							"points": "714:495;714:600;915:600;915:640",
 							"nameLabel": {
 								"$ref": "AAAAAAFq9g+MjgMRoxs="
 							},
@@ -13620,7 +13635,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 585,
+									"left": 602,
 									"top": 523,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -13637,7 +13652,7 @@
 										"$ref": "AAAAAAFq9hG9mwNCqro="
 									},
 									"font": "Arial;13;0",
-									"left": 441,
+									"left": 475,
 									"top": 568,
 									"height": 13,
 									"alpha": 0.5235987755982988,
@@ -13672,7 +13687,7 @@
 								"$ref": "AAAAAAFqncXRqAL/CUA="
 							},
 							"lineStyle": 2,
-							"points": "456:600;456:544;714:544;714:495",
+							"points": "490:600;490:544;714:544;714:495",
 							"nameLabel": {
 								"$ref": "AAAAAAFq9hG9nANDaq4="
 							},
@@ -13719,7 +13734,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 342,
-									"top": 896,
+									"top": 875,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
@@ -13753,7 +13768,7 @@
 								"$ref": "AAAAAAFqnbzdJAJ+dHo="
 							},
 							"lineStyle": 2,
-							"points": "368:888;304:888;304:328;714:328;714:360",
+							"points": "368:867;304:867;304:328;714:328;714:360",
 							"nameLabel": {
 								"$ref": "AAAAAAFq9hNpMAOAoMs="
 							},
@@ -14823,7 +14838,7 @@
 								"$ref": "AAAAAAFqUBZZ2RcL4Ys="
 							},
 							"name": "_ubicacion",
-							"documentation": "id de la ubicacion donde se encuentra",
+							"documentation": "id de la ubicacion donde se encuentra\n\n# TODO\nEsto se convertira en 3 campos\nUbicacion, planta y ambiente",
 							"type": "INTEGER",
 							"length": 0,
 							"foreignKey": true,
@@ -15449,7 +15464,7 @@
 								"$ref": "AAAAAAFqncXRpwL9Ztk="
 							},
 							"name": "_ubicacion",
-							"documentation": "Cambio de ubicacion del equipo.",
+							"documentation": "Cambio de ubicacion del equipo.\n\n# TODO\nEsto de dividira en 3 campos, ubicacion,  planta y ambiente",
 							"type": "INTEGER",
 							"length": 0,
 							"foreignKey": true,
@@ -15560,6 +15575,7 @@
 								"$ref": "AAAAAAFqncXXQwMJDV0="
 							},
 							"name": "__equipos[]",
+							"documentation": "Esta propiedad deberia removerse ya q la relacion se guardara en otra tabla",
 							"length": 0
 						}
 					]
@@ -16064,6 +16080,17 @@
 						},
 						{
 							"_type": "ERDColumn",
+							"_id": "AAAAAAFraFICmiwhkfg=",
+							"_parent": {
+								"$ref": "AAAAAAFqrMwIMl30ooo="
+							},
+							"name": "POE",
+							"type": "BOOLEAN",
+							"length": 0,
+							"nullable": true
+						},
+						{
+							"_type": "ERDColumn",
 							"_id": "AAAAAAFq7BgwXjoJB4Q=",
 							"_parent": {
 								"$ref": "AAAAAAFqrMwIMl30ooo="
@@ -16124,7 +16151,7 @@
 								"$ref": "AAAAAAFqrM7siF5D0dE="
 							},
 							"name": "ambiente_donde_llega",
-							"documentation": "Nombre del ambiente donde llega.",
+							"documentation": "Nombre del ambiente donde llega.\n\n# TODO\nEntonces seia de tipo Ambiente, FK\nPero para esto se deberia de registrar con mas detalle los lugares.",
 							"type": "VARCHAR",
 							"length": 0,
 							"nullable": true
