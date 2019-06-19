@@ -14746,7 +14746,8 @@
 							},
 							"name": "estado",
 							"documentation": "Estado en el que se encuentra el bien:\n- bueno\n- regular \n- malogrado \n- malo\n",
-							"type": "VARCHAR"
+							"type": "VARCHAR",
+							"nullable": true
 						},
 						{
 							"_type": "ERDColumn",
@@ -15253,7 +15254,7 @@
 								"$ref": "AAAAAAFqnbzdJAJ8F34="
 							},
 							"name": "fecha_registrada",
-							"documentation": "Fecha en que se guardo el registro en la base de datos.",
+							"documentation": "Fecha en que se guardo el registro en la base de datos.\n\n# NOTA\nEste campo de agregara desde base de datos",
 							"type": "DATETIME",
 							"nullable": true
 						},
@@ -15439,7 +15440,7 @@
 								"$ref": "AAAAAAFqncXRpwL9Ztk="
 							},
 							"name": "fecha_registrada",
-							"documentation": "Fecha en que se ingreso el registro en la base de datos, este campo se guardara de forma automatica.",
+							"documentation": "Fecha en que se ingreso el registro en la base de datos, este campo se guardara de forma automatica.\nESTE CAMPO SE AGREGARA DESDE LA BASE DE DATOS",
 							"type": "DATETIME",
 							"length": 0,
 							"nullable": true
