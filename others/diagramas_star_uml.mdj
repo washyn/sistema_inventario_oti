@@ -14375,8 +14375,8 @@
 										"$ref": "AAAAAAFttcxSdIgD5+s="
 									},
 									"font": "Arial;13;1",
-									"left": 2320,
-									"top": 501,
+									"left": 2400,
+									"top": 85,
 									"width": 154.998046875,
 									"height": 13,
 									"text": "pendientes"
@@ -14401,8 +14401,8 @@
 												"$ref": "AAAAAAFttc4ia4g00Wg="
 											},
 											"font": "Arial;13;0",
-											"left": 2325,
-											"top": 524,
+											"left": 2405,
+											"top": 108,
 											"width": 144.998046875,
 											"height": 13
 										},
@@ -14416,8 +14416,8 @@
 												"$ref": "AAAAAAFtteCygYhBLXc="
 											},
 											"font": "Arial;13;0",
-											"left": 2325,
-											"top": 539,
+											"left": 2405,
+											"top": 123,
 											"width": 144.998046875,
 											"height": 13
 										},
@@ -14431,8 +14431,8 @@
 												"$ref": "AAAAAAFtteDlG4hI9EM="
 											},
 											"font": "Arial;13;0",
-											"left": 2325,
-											"top": 554,
+											"left": 2405,
+											"top": 138,
 											"width": 144.998046875,
 											"height": 13
 										},
@@ -14446,22 +14446,22 @@
 												"$ref": "AAAAAAFtteMa9Ih7Lk8="
 											},
 											"font": "Arial;13;0",
-											"left": 2325,
-											"top": 569,
+											"left": 2405,
+											"top": 153,
 											"width": 144.998046875,
 											"height": 13
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 2320,
-									"top": 519,
+									"left": 2400,
+									"top": 103,
 									"width": 154.998046875,
 									"height": 68
 								}
 							],
 							"font": "Arial;13;0",
-							"left": 2320,
-							"top": 496,
+							"left": 2400,
+							"top": 80,
 							"width": 154.998046875,
 							"height": 91,
 							"nameLabel": {
@@ -14488,8 +14488,8 @@
 										"$ref": "AAAAAAFttc0B5IgeIPQ="
 									},
 									"font": "Arial;13;1",
-									"left": 2320,
-									"top": 645,
+									"left": 2400,
+									"top": 229,
 									"width": 154.998046875,
 									"height": 13,
 									"text": "documentos"
@@ -14514,8 +14514,8 @@
 												"$ref": "AAAAAAFttc4uIog6TYE="
 											},
 											"font": "Arial;13;0",
-											"left": 2325,
-											"top": 668,
+											"left": 2405,
+											"top": 252,
 											"width": 144.998046875,
 											"height": 13
 										},
@@ -14529,8 +14529,8 @@
 												"$ref": "AAAAAAFtteNuW4iDzzA="
 											},
 											"font": "Arial;13;0",
-											"left": 2325,
-											"top": 683,
+											"left": 2405,
+											"top": 267,
 											"width": 144.998046875,
 											"height": 13
 										},
@@ -14544,22 +14544,22 @@
 												"$ref": "AAAAAAFtteN7LoiKFFA="
 											},
 											"font": "Arial;13;0",
-											"left": 2325,
-											"top": 698,
+											"left": 2405,
+											"top": 282,
 											"width": 144.998046875,
 											"height": 13
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 2320,
-									"top": 663,
+									"left": 2400,
+									"top": 247,
 									"width": 154.998046875,
 									"height": 53
 								}
 							],
 							"font": "Arial;13;0",
-							"left": 2320,
-							"top": 640,
+							"left": 2400,
+							"top": 224,
 							"width": 154.998046875,
 							"height": 76,
 							"nameLabel": {
